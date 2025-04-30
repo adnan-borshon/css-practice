@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Box</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #101724;
+      margin: 0;
+    }
+
+    .scene {
+      perspective: 1800px; /* Controls the 3D depth */
+    }
+
+    .box {
+      width: 150px;  /* Decreased width */
+      height: 150px; /* Decreased height */
+      position: relative;
+      transform-style: preserve-3d;
+      transform: rotateX(-30deg) rotateY(45deg);
+    }
+
+    .face {
+      position: absolute;
+      width: 150px;  /* Decreased width */
+      height: 75px;  /* Decreased height */
+      border: 20px solid white;
+      box-sizing: border-box;
+    }
+
+    .front  { transform: translateZ(75px); }
+    .back   { transform: rotateY(180deg) translateZ(75px); }
+    .left   { transform: rotateY(-90deg) translateZ(75px); }
+    .right  { transform: rotateY(90deg) translateZ(75px); }
+    .top    { transform: rotateX(90deg) translateZ(75px); }
+    .bottom { transform: rotateX(-90deg) translateZ(75px); }
+  </style>
+</head>
+<body>
+
+  <div class="scene">
+    <div class="box">
+      <div class="face front"></div>
+      <div class="face back"></div>
+      <div class="face left"></div>
+      <div class="face right"></div>
+    </div>
+  </div>
+
+</body>
+</html>
