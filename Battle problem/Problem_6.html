@@ -1,0 +1,73 @@
+<!-- this is a problem set from https://cssbattle.dev/ ..
+this one is from a battle #228 Another Tree-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#228 Another Tree</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        .container{
+            width: 400px;
+            height: 300px;
+            border:2px solid black;
+        }
+        #r {
+          width: 120px;
+          height: 120px;
+          background: #3F8090;
+          transform: translate(140px, 30px);
+          border-radius: 50%;
+        }
+      
+        #b {
+          position: relative;
+          height: 180px;
+          width: 40px;
+          background: #072949;
+          transform: translate(180px, -30px);
+        }
+      
+        #b::after, #b::before {
+          content: "";
+          position: absolute;
+          height: 80px;
+          width: 35px;
+          background: #072949;
+          clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+          bottom: 0;
+        }
+      
+        #b::after{
+    transform:translateX(-35px);
+    /* clip-path: path("M 10,100 A 10,10 0,0,0 100,20 L 100,100 Z"); */
+    
+  }
+      
+        #b::before{
+    transform:translateX(39px) rotateY(180deg);
+
+  }
+      
+        * {
+          margin: 0;
+          background: #D2F8FF;
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div id="r"></div>
+        <div id="b"></div>
+    </div>
+ 
+</body>
+</html>

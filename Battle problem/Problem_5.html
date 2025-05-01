@@ -1,0 +1,66 @@
+<!-- this is a problem set from https://cssbattle.dev/ ..
+this one is from a battle #223 UFO-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#223 UFO</title>
+    <style>
+        body{
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
+          background: #2F434E;
+          height:100vh;
+          position:relative;
+        }
+      
+        
+        #r{
+     background:#E25C57;
+    width:160px;
+    height:120px;
+    position:relative;
+    transform:translateY(-10px);
+     border-radius:100px 100px 0 0;
+  }
+        #b{
+          display:flex;
+          justify-content:space-evenly;
+          align-items:center;
+        position:absolute;
+          background:#F3AC3C;
+          height:45px;
+          width:260px;
+          transform:translateY(31px);
+          clip-path:polygon(0% 100%, 19% 2%, 81% 2%, 100% 100%);
+        }
+        #x,#y,#z{
+    height:20px;
+    width:20px;
+    z-index:10;
+     background:#E25C57;
+    border-radius:50%
+  }
+        #x{
+          transform:translate(-10px, 5px);
+        }
+        #z{
+            transform:translate(9px, 3px);
+        }
+        #y{
+             transform:translate(0px, 3px);
+        }
+      </style>
+</head>
+<body>
+    <div id="r"></div>
+    <div id="b">
+       <div id="x"></div>
+       <div id="y"></div>
+       <div id="z"></div>
+    </div>
+</body>
+</html>
