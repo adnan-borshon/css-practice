@@ -1,0 +1,113 @@
+<!-- this is a problem set from https://cssbattle.dev/ ..
+this one is from a battle #222 Rocket-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#222 Rocket</title>
+    <style>
+        body {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #B0E1FB;
+            margin: 0;
+        }
+        .container{
+            
+            height: 300px;
+            width: 400px;
+            border: 3px solid #0F2836;
+            padding-bottom: 5px;
+        }
+
+        #c {
+            height: 75%;
+            width: 40%;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            position: relative;
+            transform: translateX(120px);
+            z-index: 2;
+          
+        }
+
+        #x,#r,#y {
+            background: #4B4D88;
+        }
+
+        #x, #y {
+            height: 30px;
+            width: 30px;
+    
+            position: absolute;
+        }
+
+        #r {
+            height: 175px;
+            width: 51px;
+            border-radius: 35px 35px 35px 35px;
+        }
+
+        #x {
+            bottom: 30%;
+            left: 10%;
+            clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+        }
+
+        #y {
+            bottom: 30%;
+            right: 10%;
+            clip-path: polygon(0% 100%, 0% 0%, 100% 100%);
+        }
+
+        #c1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        #b {
+            height: 35px;
+            width: 130px;
+            background: #C15965;
+            clip-path: polygon(0% 100%, 27% 0%, 73% 0%, 100% 100%);
+        }
+
+        #a {
+            position: absolute;
+            height: 25px;
+            width: 60px;
+            z-index: 1;
+            left: 170px;
+            top: -13px;
+            border-radius: 80%;
+            background: #B0E1FB;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="c">
+            <div id="x"></div>
+            <div id="r"></div>
+            <div id="y"></div>
+        </div>
+        <div id="c1">
+            <div id="a"></div>
+            <div id="b"></div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

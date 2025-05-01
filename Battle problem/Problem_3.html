@@ -1,0 +1,48 @@
+<!-- this is a problem set from https://cssbattle.dev/ ..
+this one is from a battle #221 Entangled-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#221 Entangled</title>
+    <style>
+        body {
+          background: #3F4869;
+          margin:0;
+          display:flex;
+          justify-content:center;
+          align-items:center;
+          height: 100vh;
+        }
+        #a,#b{
+          height:180px;
+          width:180px;
+          border-radius:50%;
+        }
+        #a{
+          transform:translateX(40px);
+          background:#F4DA64;
+        }
+        #b{
+          transform:translateX(-40px);
+          background:#E25C57;
+          position:relative;
+      
+        }
+        #b::before{
+          content:"";
+          position:absolute;
+          bottom: 6px;
+          height:84px;
+          width:80px;
+        border-radius:0 0 0 0;
+         border-radius:0 0 500px ;
+          background:#F4DA64;
+        }
+      </style></head>
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+</body>
+</html>

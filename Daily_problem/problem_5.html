@@ -1,0 +1,74 @@
+<!-- this is a problem set from https://cssbattle.dev/ ..
+From the daily targets
+this one is for 1th may, 2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 2</title>
+    <style>
+        body {
+            background: #3F4869;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #c {
+            margin: 16px;
+            display: grid;
+            grid-template: 50px 130px 50px / 50px 252px 50px;
+        }
+
+        #sl,
+        #sr,
+        #m,
+        #l {
+            background: #F4DA64;
+        }
+
+        #m {
+            border-radius: 0 0 500px 500px;
+            position: relative;
+        }
+
+        #m::before {
+            content: "";
+            background: #3F4869;
+            height: 80px;
+            width: 165px;
+            position: absolute;
+            left: 45px;
+            border-radius: 0 0 600px 600px;
+        }
+
+        #l {
+            margin-top: 22px;
+            justify-self: center;
+            height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="c">
+        <div id="sl"></div>
+        <div></div>
+        <div id="sr"></div>
+        <div></div>
+        <div id="m"></div>
+        <div></div>
+        <div></div>
+        <div id="l"></div>
+        <div></div>
+    </div>
+
+</body>
+
+</html>
