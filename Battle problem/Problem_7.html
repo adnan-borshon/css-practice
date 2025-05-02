@@ -1,0 +1,86 @@
+<!-- this is a problem set from https://cssbattle.dev/ ..
+this one is from a battle #227 Balanced-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#227 Balanced</title>
+    <style>
+        * {
+            background: #CF6939;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            height: 300px;
+            width: 400px;
+            border: 2px solid black;
+            padding: 20px;
+        }
+        #c {
+            width: 140px;
+            height: 270px;
+            background: #F9D081;
+            border-radius: 200px 200px;
+            transform: translate(122px, 8px);
+            position: relative;
+            
+        }
+
+        #c::before {
+            content: "";
+            background: #CF6939;
+            width: 150px;
+            height: 80px;
+            bottom: 72px;
+            left: -5px;
+            position: absolute;
+        }
+
+        #x {
+            width: 60px;
+            height: 185px;
+            background: #123747;
+            border-radius: 200px 200px;
+            transform: translate(40px, 40px);
+            position: relative;
+        }
+
+        #x::before,
+        #x::after {
+            content: "";
+            position: absolute;
+            width: 60px;
+        }
+
+        #x::before {
+            height: 78px;
+            border-radius: 50px 50px 0 0;
+            background: #CF6939;
+        }
+
+        #x::after {
+            height: 32px;
+            border-radius: 0 0 50px 50px;
+            bottom: -5px;
+            background: #6d8971;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="c">
+            <div id="x"></div>
+        </div>
+    </div>
+</body>
+
+</html>

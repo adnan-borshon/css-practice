@@ -1,0 +1,65 @@
+<!-- this is a problem set from https://cssbattle.dev/ ..
+From the daily targets
+this one is for 2nd may, 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd May</title>
+    <style>
+        *{
+            background: #e1d3a4;
+        }
+        body{
+        
+            display: flex;
+            justify-content: center;    
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            position: relative;
+            height: 300px;
+            width: 400px;
+            border:2px solid black;
+        }
+        #x,#y,#z {
+            height: 80px;
+            width: 80px;
+            background: #9A5DCB;
+            position: absolute;
+        }
+
+        #x {
+            bottom: 70px;
+            left: 80px;
+            border-radius: 20px 0 20px;
+        }
+
+        #y {
+            top: 70px;
+            left: 160px;
+            border-radius: 20px 20px 0 0;
+        }
+
+        #z {
+            bottom: 70px;
+            right: 80px;
+            border-radius: 0 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="x"></div>
+        <div id="y"></div>
+        <div id="z"></div>
+    </div>
+
+</body>
+
+</html>
