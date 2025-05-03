@@ -1,0 +1,50 @@
+<!-- css-challenges.com  a website that provides a
+  collection of CSS challenges to help you improve your CSS skills. 
+  The challenges are designed to be fun and engaging, and they cover a wide range of topics, 
+   basic CSS properties to advanced techniques.  -->
+   <!DOCTYPE html>
+   <html lang="en">
+   
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>2</title>
+       <style>
+           body {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 100vh;
+               background-color: #f0f0f0;
+           }
+   
+           .box {
+               width: 280px;
+               height: 280px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               font-family: "Inconsolata", monospace;
+               font-size: 28px;
+               border: 1px solid #c39f76;
+               box-sizing: border-box;
+           }
+       /* text shadow takes 3 parameters... where last parameter is for how much 
+       blur i want for the text shadow. */
+       .box::before {
+        content: 'Hello World';
+        color: #fff;
+        text-shadow:
+                0 1px #000,
+                0 -1px #000,
+                1px 0 #000,
+                -1px 0 #000;
+}
+       </style>
+   </head>
+   
+   <body>
+       <div class="box"></div>
+   </body>
+   
+   </html>
