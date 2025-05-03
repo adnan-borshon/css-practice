@@ -1,0 +1,83 @@
+<!-- this is a problem set from https://cssbattle.dev/ ..
+From the daily targets
+this one is for 3rd may, 2025 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd May</title>
+    <style>
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            position: relative;
+            height: 300px;
+            width: 400px;
+            border: 3px solid white;
+            overflow: hidden;
+        }
+
+        div {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            background: #F4DA64;
+            position: absolute;
+        }
+
+        * {
+            background: #5C8D8F;
+        }
+
+        #l {
+            left: -130px;
+        }
+
+        #r {
+            right: -130px;
+        }
+
+        #r,
+        #l {
+            bottom: 20px;
+        }
+
+        #t {
+            top: -130px;
+        }
+
+        #b {
+            bottom: -130px;
+        }
+
+        #b,
+        #t {
+            height: 160px;
+            width: 160px;
+            right: 70px;
+            background: none;
+            border: 50px solid #F4DA64;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div id="l"></div>
+        <div id="r"></div>
+        <div id="t"></div>
+        <div id="b"></div>
+    </section>
+ 
+</body>
+
+</html>
