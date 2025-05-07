@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+    margin:0;
+    background:#2D3464;
+  }
+  body {
+ background: #FAE29E;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+ .container{
+            position: relative;
+            height: 300px;
+            width: 400px;
+            border: 3px solid black;
+            overflow: hidden;
+        }
+  #x,#y{
+      width: 400px;
+    height: 300px;
+    clip-path:polygon(0% 100%, 50% 0%, 100% 100%);
+    position:absolute;
+  }
+  #y{
+    rotate:180deg;
+    background:#C0D6E7;
+  }
+#x{
+  background:#5AA4B7;
+}
+
+      
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div id="x"></div>
+        <div id="y"></div>
+    </div>
+</body>
+</html>
